@@ -87,8 +87,11 @@ void CalcularCondicion(vector <vector<double>> &matriz, int tamaño, vector<vect
         }
     }
     cout<<"Resultado de la Norma de la Matriz: "<<resultadototalM<<endl;
+    cout<<"RESULTADO DE LA CONDICION:"<<endl;
     cout<<"Resultado de la Norma de la Matriz Inversa: "<<resultadototalMI<<endl;
-    condicion= floor(log10 (fabs(resultadototalM*resultadototalMI)));
+    condicion= fabs(resultadototalM*resultadototalMI);
+    cout<<"SE MUESTRA LA CONDICION: "<<endl;
+    cout<<condicion<<endl;
 }
 
 
